@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+struct Node
+{
+    int key;
+    Node *link;
+};
+
+int main()
+{
+    Node *ptr=new Node();
+    ptr->key=2;
+    ptr->link=NULL;
+    Node *head=ptr;
+    
+    cout<<"address where the ptr is present"<<ptr<<endl;
+    cout<<"address where the head is pointing"<<head<<endl;
+    cout<<"address where the head is presnet"<<&head<<endl;
+    cout<<"Value of the ptr "<<ptr->key<<endl;
+    
+    
+
+	return 0;
+}
+#################################################################################
+address where the ptr is present0x961e70
+address where the head is pointing0x961e70
+address where the head is presnet0x7ffd8fa6f198
+Value of the ptr 2
+##################################################################################
+https://ide.geeksforgeeks.org/V3EemIXN0L
