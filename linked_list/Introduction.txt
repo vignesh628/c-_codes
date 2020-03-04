@@ -1,0 +1,6 @@
+If we declare like 
+Node *ptr=new Node()
+Then this ptr is of type node, which has both key , value pair.
+#################################################################################################################################
+this is similar to int *a=7;
+now if you wanna print the address of ptr which of node type print(ptr)
