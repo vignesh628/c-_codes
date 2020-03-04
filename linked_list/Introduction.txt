@@ -2,5 +2,8 @@ If we declare like
 Node *ptr=new Node()
 Then this ptr is of type node, which has both key , value pair.
 #################################################################################################################################
-this is similar to int *a=7;
-now if you wanna print the address of ptr which of node type print(ptr)
+IF you wanna access the structure members we use the operator ->
+IF the ptr is node, then 
+Node *head=ptr #this means that the address of ptr is provided to the head.
+Node *head=ptr->link #this means that the address ptr pointing we will provided to head.
+####################################################################################################################################
