@@ -1,0 +1,20 @@
+int i=10;
+We can print the address where the i is located is address of i -> &i.
+######################################################################################################################################
+IF you  wanna store the address of i -> you can use the pointer to store that.
+Making the pointer should satisfy the two requirements:
+1.it should store the address.
+2.it should be able to access the information at that address.
+
+to store the address of the variable which it is pointing to weshould also know the type which it is pointing to->
+int i=10;
+int *p=&i;
+cout<<p<<endl; -> this will print the addrss where the i is located.
+cout<<&i<<endl; -> this will print the address of i same as above.
+cout<<&p<<endl; -> this will print the address of p where the p is located. different from the above.
+cout<<*p<<endl; -> this will print the value of i which will print 10.
+########################################################################################################################################
+Incase of linked list if we give like
+Node *ptr=head
+Then the ptr will be the address of head.
+############################################################################################################################################
