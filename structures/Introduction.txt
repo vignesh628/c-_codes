@@ -1,0 +1,27 @@
+Creation of node for linked list:
+Struct Node
+{
+int value;
+Node *next;
+}
+There is no difference in creating the Node* next and Node *next ,both are same.
+
+################################################################################################################################
+
+assigning the null to the created node will be like:
+
+Node *head=NULL;
+#################################################################################################################################
+
+Creation of new node:
+Node *ptr=new Node();
+#####################################################################################################################################
+
+Creation of the node for the tree:
+Struct Node
+{
+int value;
+Node *left;
+Node *right;
+}
+#####################################################################################################################################
