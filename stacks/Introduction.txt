@@ -1,0 +1,24 @@
+If we are using the push condition we will check the overflow condition -> whether we are crossing the maximum length of stack or queue.
+If we are using the pop condition we will check the underflow condition -> whether the stack is empty are not. 
+If the stack is not empty only then we will perform the pop operation.
+###########################################################################################################################################
+.isEmpty() ->function used to check whether the stack or queue is empty.
+.isFull() ->Function used to check whether the stack or queue is full.
+##########################################################################################################################################
+stack and queues are data structures that can be implemented using the array or linked list.
+static implementation which we delcare the size before -> array
+dynamic implementation where we can declare the size during the run time -> linekd list.
+###########################################################################################################################################
+stack -> element is pushed at top
+     -> elemement is popped from top.
+##########################################################################################################################################
+Queue -> element is pushed at top
+      -> element is popped from bottom
+###########################################################################################################################################
+Incase of stack we will increment the top if we are inseritng the element.
+Incase of removing the element we will decrement the top.
+###########################################################################################################################################
+Applications of stack:
+1.Undo operation
+2.reverse the string.
+##############################################################################################################################################
