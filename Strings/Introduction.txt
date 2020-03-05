@@ -16,3 +16,23 @@ while(ss>>word)
 cout<<word<<endl;
 }
 ##########################################################################################################################################
+declaring the string array:-
+String str;
+declaring the character array;
+char ch[100];
+input the string array:-
+getline(cin,str);
+input the character array:-
+cin.getline(ch,100)
+########################################################################################################################################
+printing the string array:- will print the charcters
+for(int i=0;i<str.length();i++)
+{
+cout<<str[i];
+}
+printing the character array :- will print the characters
+for(int i=0;ch[i]='\0';i++)
+{
+cout<<ch[i]<<endl;
+}
+#######################################################################################################################################
