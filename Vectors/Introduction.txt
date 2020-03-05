@@ -1,0 +1,11 @@
+#When we are passing the vectors to the function pass it as the reference sice the vectors occupy more memory.
+#######################################################################################################################################
+Functions that are available in vectors:
+myvector.begin()
+myvector.end()
+myvector.push_back(value)
+myvector.pop_back(value)
+myvector.clear()
+myvector.insert(position,value) -> insert the value at that particulr position in the vector.
+myvector.at(index) -> to know the value at that particular index.
+########################################################################################################################################
