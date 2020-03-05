@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+#include<bits/stdc++.h>
+int main()
+{
+    string str;
+    getline(cin,str);
+    stringstream ss(str);
+    string word;
+    while(ss>>word)
+    {
+        cout<<word<<endl;
+    }
+}
+#######################################################################################################################################
+Input:
+I am good
+output:
+I
+am
+good
+#########################################################################################################################################
+https://ide.geeksforgeeks.org/4pAUR3ISx0
