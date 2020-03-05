@@ -1,0 +1,19 @@
+* To get the last digit we generally divide by 10. use the % operator
+* To get the every digit except the last digit we generally divide by 10 . use the '/' operator.
+* We have the sorting algorithms
+1.Insertion sort 
+2. BUbble sort
+3.Selection sort
+4.Merge sort. 
+#######################################################################################################################
+Selection sorting is the easiest algorithm that we use using two for loops.
+for(int i=0;i<n-1;i++)
+{
+for(int j=i+1;j<n;j++)
+{
+if(arr[j]>arr[i])
+{
+swap the array of j with array of i
+}}}
+######################################################################################################################
+Insertion sorting is the another easy algorthm that we use we use one for loop and one while loop.
