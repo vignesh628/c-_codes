@@ -1,0 +1,8 @@
+Adjacency matrix:
+This is the matrix that is used in graphs to know whether the edge is present beween two vertices.
+Incase of the unweighted graph is represented in boolean where 1 if the edge is present and 0 if the edge is not present.
+Incase of the weighted graphs it is represented by the weights where the each weight will be corresponding to the weight given to edge.
+##################################################################################################################################
+adjacency list-> this we can get from the adjacency matrix, used to compute the neighbors of given node.
+This is memory efficeint.
+#######################################################################################################################
