@@ -3,7 +3,7 @@
 string str;
 getline(cin,str);
 #######################################################################################################################################
-.length() -> to know the lenghth of string.
+.length() -> to know the length of string.
 #######################################################################################################################################
 #using the stringbuffer ->s is small for string in c++.
 #include<bits/stdc++.h>
@@ -15,7 +15,11 @@ while(ss>>word)
 {
 cout<<word<<endl;
 }
-##########################################################################################################################################
+clear(): Used to clear the stream
+str(): To get and set the string object whose content is present in stream
+operator << : This will add one string into the stringstream
+operator >> : This is used to read from stringstream object.
+########################################################################################################################################
 declaring the string array:-
 String str;
 declaring the character array;
@@ -36,3 +40,8 @@ for(int i=0;ch[i]='\0';i++)
 cout<<ch[i]<<endl;
 }
 #######################################################################################################################################
+using the .size() is same as using the .length() with the strings.
+We will concatenate the two strings using the + operator in c++.
+#######################################################################################################################################
+.at() is the function that is used in  the c++ to know t6he character at that particular index.
+.charAt() is the function that is used in java to know the character at that particular index.
