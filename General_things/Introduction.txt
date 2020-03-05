@@ -1,0 +1,3 @@
+Checking the type of variable in c++;
+#include<typeinfo>)
+cout<<typeid(variable)<<endl;
