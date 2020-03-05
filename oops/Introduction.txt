@@ -1,0 +1,49 @@
+* encapsulation deals with the information hiding.
+* Polymorphism consists of the two types of polymorphism
+1.Compile time polymorphism. -> deals with the operator overlaoding, Function Overloading.
+2.Run time polymorphism. -> deals with the virtual function.
+###########################################################################################################################
+operator functions are same as the normal functions. THe only difference is we have the 
+operator keyword followed by the symbol of the operator that we are using.
+##########################################################################################################################
+* We have inheritance concept in oops.
+* Inheritance involves
+1. single inheritance.
+2.mutiple inheritance
+3.multilevel inhertiance
+4.hybrid inheritance.
+5.Hierarchial inheritance.
+###########################################################################################################################
+* Abstract classes are the classes that contain one or more abstract methods.
+* abstract classes may not be instantiated. But the other methods present in classes provide implementation of the abstract 
+methods.
+############################################################################################################################
+Structure is the data type that is used to combine items of different datatypes.
+Class members are private by default.
+Structure members are public by default.
+classes are refernce type stored on heap. structures are value type stored on stack.
+class is better choice of complex data structure.
+structure is choice of simple data structure.
+Class does require the constructor.
+Structure does not require any constructor.
+###########################################################################################################################
+*** Even if you wont declare the __init__ method inside the class it will be present default. So it is not always required to 
+declare the __init__ function explicitly ***
+If we wont declare __init__
+It inherits an __init__ that takes no arguments other than self and does nothing.
+############################################################################################################################
+* Class member functions or methods inside the class can be created using the scope resolution operator.
+* class Box {
+   public:
+      double length;      // Length of a box
+      double breadth;     // Breadth of a box
+      double height;      // Height of a box
+   
+      double getVolume(void) {
+         return length * breadth * height;
+      }
+};
+* double Box::getVolume(void) {
+   return length * breadth * height;
+}
+###########################################################################################################################
