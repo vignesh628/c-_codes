@@ -1,0 +1,12 @@
+#passing the array to the function -> just pass it as the name of the array -> declare the type of array in the parameter of the function.
+int main()
+{
+int b[10];
+fun(b);
+}
+#declaring the function
+void fun(int b[]) #Here by giving the square brackets we tell that the b is not the integer value it is array.
+{
+#do something
+}
+##############################################################################################################################################
