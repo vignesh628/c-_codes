@@ -17,4 +17,8 @@ cout<<*p<<endl; -> this will print the value of i which will print 10.
 Incase of linked list if we give like
 Node *ptr=head
 Then the ptr will be the address of head.
-############################################################################################################################################
+Node *ptr=head->link
+Then the ptr will be thje address that is stored in the link
+###########################################################################################################################################* Size of pointer is always 8 bytes.
+* sizeof() operator that gives the size of a variable.
+##########################################################################################################################################
