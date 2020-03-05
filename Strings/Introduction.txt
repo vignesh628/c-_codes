@@ -1,0 +1,6 @@
+#get the line of string as input
+#include<bits/stdc++.h>
+string str;
+getline(cin,str);
+#######################################################################################################################################
+.length() -> to know the lenghth of string.
