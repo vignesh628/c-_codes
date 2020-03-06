@@ -6,4 +6,12 @@ IF you wanna access the structure members we use the operator ->
 IF the ptr is node, then 
 Node *head=ptr #this means that the address of ptr is provided to the head.
 Node *head=ptr->link #this means that the address ptr pointing we will provided to head.
-####################################################################################################################################
+###############################################################################################################################
+For the linked list memory us allocated dynamically not like array we will reserve the memory. But even that array can
+be created dynamically.
+###############################################################################################################################
+* In c++ we use the structures to create the node . We create with data , pointer pointing to the address of next node.
+* We will put the declaration of linked list globally so that it can be accessed from any where in the code. Even we 
+declare the Node *head=NULL; in global so that it can be accessed.
+##############################################################################################################################
+* 
