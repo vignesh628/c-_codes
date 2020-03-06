@@ -1,4 +1,5 @@
-#passing the array to the function -> just pass it as the name of the array -> declare the type of array in the parameter of the function.
+#passing the array to the function -> just pass it as the name of the array -> declare the type of array in the 
+parameter of the function.
 int main()
 {
 int b[10];
@@ -11,7 +12,8 @@ void fun(int b[]) #Here by giving the square brackets we tell that the b is not 
 }
 ##########################################################################################################################################
 Difference between the normal integer and static int 
-* The variable that is declared static only has scope in the file in which it is declared where as the variable declared without static can be accessed from other files using an extern declaration.
+* The variable that is declared static only has scope in the file in which it is declared where as the 
+variable declared without static can be accessed from other files using an extern declaration.
 * static can be access within that file without static can be accessed in anotehr file alo using the extern keyword.
 ########################################################################################################################################
 
