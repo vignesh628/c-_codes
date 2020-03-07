@@ -1,0 +1,65 @@
+// Inserting the node in binary tree where we encounter the first NULL.
+#include<iostream>
+using namespace std;
+#include<bits/stdc++.h>
+#include <queue>
+struct Node
+{
+    int value;
+    Node* left_address;
+    Node* right_address;
+};
+Node* insert_node(int value)
+{
+    Node* me=new Node();
+    me->value=value;
+    me->left_address=NULL;
+    me->right_address=NULL;
+    return me;
+}
+Node* insert_node_binary_tree(int value,Node* head)
+{
+    Node* me =new Node();
+    me->value=value;
+    me->left_address=NULL;
+    me->right_address=NULL;
+    queue<Node* >q;
+    q.push(head);
+    while(!q.empty())
+    {
+        Node *temp=q.front();
+        q.pop();
+        if(temp->left_address==NULL)
+        {
+            temp->left_address=me;
+            return temp->left_address;
+            break;
+        }
+        if(temp->right_address==NULL)
+        {
+            temp->right_address=me;
+            return temp->right_address;
+
+            break;
+        }
+        q.push(temp->left_address);
+        q.push(temp->right_address);
+    }
+}
+int main()
+{
+    Node* head=new Node();
+    head=insert_node(2);
+    head->left_address=insert_node(3);
+    head->left_address->left_address=insert_node(4);
+    head->right_address=insert_node(5);
+    head->right_address->right_address=insert_node(6);
+    head->left_address->right_address=insert_node(7);
+    Node* special=insert_node_binary_tree(9,head);
+    cout<<special->value;
+}
+#######################################################################################################################################
+output:
+9
+########################################################################################################################################
+https://ide.geeksforgeeks.org/1N52LTCjDR
