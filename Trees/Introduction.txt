@@ -10,3 +10,12 @@ Node* left_address;
 Node* right_address;
 };
 ###################################################################################################################################
+* Incase of binary tree we will have the atmost 2 children for every node.
+* we will be having the various levels in the tree starts with level 1, level 2, level 3.
+* level starts with 1.
+* maximum number of nodes at level = 2^(level-1).
+* types of binary tree:
+1.Perfect binary tree.->All the nodes are filled with exactly 2 children.
+2.Full binary tree.->call f0ll(binary tree nodes has 0 or 2 children).
+3.Complete binary tree.->All the nodes are filled with 2 children except the leaf nodes.
+#####################################################################################################################################
