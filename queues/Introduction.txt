@@ -1,10 +1,32 @@
+Queue uses the FIFO rule
 importing the queue as the datastructure
 #include <queue>
 ######################################################################################################################################
 IT has some built in finctions like 
 queue<Node* >q; ->if the queue is of the node type.
-q.front() ->upper most element of the queue.
+q.front() ->upper most element of the queue.->.begin() use in case of the vector.
 !q.empty() -> to check whether the queue is empty
-q.push() -> to push the element inti the queue.
-q.pop() -> to remove the element from the queue from the top.
+q.push() -> to push the element inti the queue.->push_back incase of vector.
+q.pop() -> to remove the element from the queue from the top.->pop_back incase of vector.
+q.isfull() -> to check whether the queue is full or not.
 ######################################################################################################################################
+Why do we use the circular queues ??
+If we remove the elements from the queue using the pop then they will get filled using the garbage values. This is the wastage of space.
+So we use cisrcular queues to over come that.
+#####################################################################################################################################
+Queues can be implemented using the 
+1.Arrays
+2.Linked lists
+3.queues.
+######################################################################################################################################
+implementation of the queue using the arrays:
+int arr[5];
+int queue[5];-> this way we can implement the queue using the arrays.
+######################################################################################################################################
+The operations that we do on the queue is:
+1.Enqueue-> adding the elements to the queue.
+2.Dequeue-> remove the elements from the queue.
+3.Peek -> Displaying the top element of the queue.'
+4.Display ->Display all the elements of the queue.
+#####################################################################################################################################
+
