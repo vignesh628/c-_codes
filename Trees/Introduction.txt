@@ -1,0 +1,12 @@
+* Trees:->It is like similar to the stacks and queues to use the information.
+* This contain the key,left_adress,right_address. where the address is represented by the pointer.
+* If it is not pointing to any address then it is assigned with the pointer.
+* Tree which has atmost 2 children is called the binary tree.
+* declaration of tree Node
+struct Node
+{
+int key;
+Node* left_address;
+Node* right_address;
+};
+###################################################################################################################################
