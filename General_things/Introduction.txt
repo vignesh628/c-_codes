@@ -1,7 +1,42 @@
 Checking the type of variable in c++;
 #include<typeinfo>
 cout<<typeid(variable)<<endl;
-##########################################################################################################################################
+#######################################################################################################################################
+Macros: Macros are a piece of code in a program which is given some name. Whenever this name is encountered by the compiler the compiler replaces the name with the actual piece of code.
 #define N 5
 now the value of N is defined to be 5.
-#########################################################################################################################################
+*Macros can be used in functions also with function definitiona nd the operation to perform in single line.
+#define AREA(l, b) (l * b) 
+int main() 
+{ 
+    int l1 = 10, l2 = 5, area;
+    area = AREA(l1, l2); 
+    printf("Area of rectangle is: %d", area); 
+    return 0; 
+} 
+########################################################################################################################################
+left shifting operator in c++ <<
+right shifting operator in c++ >>
+multiplying the value by 2 means that the shofitng the bits towards left.
+dividing the value by 2 means that shifting the bots towards right.
+If you wanna perfrom the operations of left shifing and right shifting mutiply  and divide the numbers and later convert to binary.
+########################################################################################################################################
+Maximum size of the array that you can declare is in order of 10^6. If you declare it globally you can decalre it up to 10^7.
+#######################################################################################################################################
+Number of digits in number is Number of digits in N =floor(log10(N)) + 1;  
+#######################################################################################################################################
+auto keyword can be used in the c++ to tell the compiler to infer the data type of variable from initializers type. this can be used while using the function for the return type.
+#######################################################################################################################################
+We can also use the hexadecimal values in case of c++.
+int main() 
+{ 
+	auto number = 0b011; 
+	cout << number; 
+	return 0; 
+} 
+output:
+3
+########################################################################################################################################
+* Using the auto keyword to declare datatypes can save a lot of time during programming contests.
+* 
+
