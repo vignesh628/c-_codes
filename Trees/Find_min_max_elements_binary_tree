@@ -1,0 +1,58 @@
+#include<iostream>
+using namespace std;
+struct Node
+{
+    int value;
+    Node* left_address;
+    Node* right_address;
+};
+
+Node*  create_node(int value)
+{
+    Node* me=new Node();
+    me->value=value;
+    me->left_address=NULL;
+    me->right_address=NULL;
+    return me;
+}
+// minimum lelement is the left most element in the tree.
+void find_min_element(Node* head)
+{
+    Node* current=head;
+    while(current->left_address!=NULL)
+    {
+        current=current->left_address;
+    }
+    cout<<current->value<<endl;
+}
+// maximum element is the right most element in the tree.
+void find_max_element(Node* head)
+{
+    Node * current=head;
+    while(current->right_address!=NULL)
+    {
+        current=current->right_address;
+        
+    }
+    cout<<current->value<<endl;
+}
+
+int main()
+{
+    Node *head=NULL;
+    head=create_node(3);
+    head->left_address=create_node(4);
+    head->right_address=create_node(6);
+    head->left_address->left_address=create_node(2);
+    head->right_address=create_node(7);
+    head->right_address->right_address=create_node(8);
+    find_min_element(head);
+    find_max_element(head);
+    
+}
+#####################################################################################################################################
+2
+8
+
+#######################################################################################################################################
+https://ide.geeksforgeeks.org/lv7N0dTOns
