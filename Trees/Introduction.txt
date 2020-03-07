@@ -19,3 +19,16 @@ Node* right_address;
 2.Full binary tree.->call f0ll(binary tree nodes has 0 or 2 children).
 3.Complete binary tree.->All the nodes are filled with 2 children except the leaf nodes.
 #####################################################################################################################################
+THere are two types are traversal in binary tree:
+1.Breadth First traversal->Also known as the level order traversal.
+In this we will use the queue. we will parse through the levels.we will put the top element of tree into queue . we will pop the element
+and add the left and right address of the head to the queue.
+2.Depth First Traversal->  In this we use the recursion has the three traversals.
+1. In order traversal.-> visit left,head,right.
+2.Pre order traversal.-> visit head, left,right.
+3. Post order traversal.->visit left,right,head.
+#remember we never start with right.
+#######################################################################################################################################
+* To find the maximum element in the tree visit the right most element of the tree.
+* To find the minimum element in the tree visit the left most element of the tree.
+#######################################################################################################################################
