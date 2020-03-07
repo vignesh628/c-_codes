@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+#include<bits/stdc++.h>
+struct Node
+{
+    int value;
+    Node* left_address;
+    Node* right_address;
+};
+Node* create_node(int value)
+{
+    Node* node=new Node();
+    node->value=value;
+    node->left_address=NULL;
+    node->right_address=NULL;
+    return node;
+}
+int main()
+{
+    Node *head=create_node(1);
+    head->left_address=create_node(2);
+    head->left_address->left_address=create_node(3);
+    head->right_address=create_node(4);
+    head->right_address->right_address=create_node(5);
+    cout<<head->value<<endl;
+    cout<<head->left_address->value<<endl;
+    cout<<head->left_address->left_address->value<<endl;
+    cout<<head->right_address->value<<endl;
+    cout<<head->right_address->right_address->value<<endl;
+    
+}
+#####################################################################################################################################
+1
+2
+3
+4
+5
+######################################################################################################################################
+https://ide.geeksforgeeks.org/DdsokVDYyD
