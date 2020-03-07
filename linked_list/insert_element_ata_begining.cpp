@@ -4,50 +4,79 @@ using namespace std;
 struct Node
 {
     int value;
-    Node *ptr;
+    Node* address;
 };
-Node* insertatbegining(int value, Node *head) //return type is Node*
+Node *head=NULL;
+Node* insert_at_begining(int value,Node* head)
 {
-    Node *me=new Node();
-    me->value=value;
-    me->ptr=head;
-    head=me;
-    return head;
-}
-int main()
-{
-   Node *head=NULL;
-   Node *me=new Node();
-   me->value=2;
-   me->ptr=NULL;
-   head=me;
-   cout<<head->value<<endl;
-   cout<<head->ptr<<endl;
-   head=insertatbegining(3,head);
-    cout<<head->value<<endl;
-    cout<<head->ptr<<endl;
-    head=insertatbegining(4,head);
-    cout<<head->value<<endl;
-    cout<<head->ptr<<endl;
-    cout<<"printing the whole linked list value of elements";
-    while(head!=NULL)
+    Node *ptr=new Node();
+    if(head==NULL)
     {
-        cout<<head->value<<endl;
-        head=head->ptr;
+        
+        ptr->value=value;
+        ptr->address=NULL;
+        head=ptr;
+        return head;
+    }
+    else
+    {
+        ptr->value=value;
+        ptr->address=head;
+        head=ptr;
+        return head;
     }
     
 }
-######################################################################################################################################
-output:
-2
-0
-3
-0x1954e70
+Node* insert_at_ending(int value,Node* head)
+{
+    Node *ptr=new Node();
+    Node *temp=head;
+    if(head==NULL)
+    {
+        
+        ptr->value=value;
+        ptr->address=NULL;
+        head=ptr;
+        return head;
+    }
+    else
+    {
+    ptr->value=value;
+    ptr->address=NULL;
+    while(temp->address!=NULL)
+    {
+        temp=temp->address;
+    }
+    temp->address=ptr;
+    return head;
+    }
+}
+int main()
+{
+    head=insert_at_ending(200,head);
+    head=insert_at_begining(2,head);
+    head=insert_at_begining(3,head);
+    head=insert_at_begining(4,head);
+    head=insert_at_begining(5,head);
+    head=insert_at_ending(100,head);
+    while(true)
+    {
+        
+        cout<<head->value<<endl;
+        if((head->address)==NULL)
+        {
+           break;
+        }
+        head=head->address;
+    }
+    
+}
+#####################################################################################################################################
+5
 4
-0x1955ea0
-printing the whole linked list value of elements
-4
 3
 2
-###########################################################################################################################################
-https://ide.geeksforgeeks.org/t6fU3qHh3D
+200
+100
+#####################################################################################################################################
+ https://ide.geeksforgeeks.org/0YrXAkvJqI
