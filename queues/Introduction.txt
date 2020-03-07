@@ -1,0 +1,10 @@
+importing the queue as the datastructure
+#include <queue>
+######################################################################################################################################
+IT has some built in finctions like 
+queue<Node* >q; ->if the queue is of the node type.
+q.front() ->upper most element of the queue.
+!q.empty() -> to check whether the queue is empty
+q.push() -> to push the element inti the queue.
+q.pop() -> to remove the element from the queue from the top.
+######################################################################################################################################
