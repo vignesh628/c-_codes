@@ -1,43 +1,82 @@
 #include<iostream>
 using namespace std;
 #include<bits/stdc++.h>
-
 struct Node
 {
     int value;
-    Node* ptr;
+    Node* address;
 };
-void insert_at_ending(int value,Node* head)
+Node *head=NULL;
+Node* insert_at_begining(int value,Node* head)
 {
-    
-    Node* x=new Node();
-    x->value=value;
-    x->ptr=NULL;
-    while(head->ptr!=NULL)
+    Node *ptr=new Node();
+    if(head==NULL)
     {
-        head=head->ptr;
+        
+        ptr->value=value;
+        ptr->address=NULL;
+        head=ptr;
+        return head;
+    }
+    else
+    {
+        ptr->value=value;
+        ptr->address=head;
+        head=ptr;
+        return head;
     }
     
-    head->ptr=x;
-    
+}
+Node* insert_at_ending(int value,Node* head)
+{
+    Node *ptr=new Node();
+    Node *temp=head;
+    if(head==NULL)
+    {
+        
+        ptr->value=value;
+        ptr->address=NULL;
+        head=ptr;
+        return head;
+    }
+    else
+    {
+    ptr->value=value;
+    ptr->address=NULL;
+    while(temp->address!=NULL)
+    {
+        temp=temp->address;
+    }
+    temp->address=ptr;
+    return head;
+    }
 }
 int main()
 {
-    Node* head=NULL;
-    Node * me=new Node();
-    me->value=2;
-    me->ptr=NULL;
-    head=me;
-    insert_at_ending(3,head);
-    insert_at_ending(4,head);
-    while(head!=NULL)
+    head=insert_at_ending(200,head);
+    head=insert_at_begining(2,head);
+    head=insert_at_begining(3,head);
+    head=insert_at_begining(4,head);
+    head=insert_at_begining(5,head);
+    head=insert_at_ending(100,head);
+    while(true)
     {
-        cout<<head->value;
-        head=head->ptr;
+        
+        cout<<head->value<<endl;
+        if((head->address)==NULL)
+        {
+           break;
+        }
+        head=head->address;
     }
     
 }
-###################################################################################################################################
-234
 ######################################################################################################################################
-https://ide.geeksforgeeks.org/A3Jw0qc4SQ
+https://ide.geeksforgeeks.org/0YrXAkvJqI
+######################################################################################################################################
+5
+4
+3
+2
+200
+100
