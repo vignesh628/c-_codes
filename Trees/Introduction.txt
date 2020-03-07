@@ -32,3 +32,10 @@ and add the left and right address of the head to the queue.
 * To find the maximum element in the tree visit the right most element of the tree.
 * To find the minimum element in the tree visit the left most element of the tree.
 #######################################################################################################################################
+For the Breadth first traversal or level order traversal we will be using the queue.
+For the queue we will be using the #include<queue> , queue <Node*> q; we will be pushing the nodes*** into the queue.
+q.front()
+q.push()
+q.pop()
+q.empty()
+#######################################################################################################################################
