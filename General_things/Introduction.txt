@@ -1,3 +1,10 @@
+what is std in using namespace std; std is considerd as standard.
+If you are using the "using namepsace std;" means that you are bringing every name in the std to the current scope.
+this "using" is the keyword in the c++.
+we can use it like using std::cout where we will bring only the cout from the standard library.
+:: is the scope resolution operator that we are using here.
+For more details about scope resolution operator see the other file in same directory.
+#######################################################################################################################################
 Checking the type of variable in c++;
 #include<typeinfo>
 cout<<typeid(variable)<<endl;
@@ -38,5 +45,17 @@ output:
 3
 ########################################################################################################################################
 * Using the auto keyword to declare datatypes can save a lot of time during programming contests.
+* Usage of typedef: Declaring the new datatypes using typedef helps us to alias the datatype.
+* typedef [original-type] [your-alias];
+* typedef float vignesh;
+* typedef unsigned int u32;
+* int main()
+{
+vignesh a=3.14;
+u32 b=64;
+}
+* this will helpus to easy remember to which datatype it belongs to.
+*There is bigger advantage of this when we are writing larger codes to store all this in single file how they do in continental.
+#######################################################################################################################################
+* using keyword in c++.
 * 
-
