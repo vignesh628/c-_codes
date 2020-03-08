@@ -31,5 +31,5 @@ object.method() -> to access the method in the class.
 #######################################################################################################################################
 * Symbol to inherit the class in c++ is ':'.
 * inherting the siongle class class A: public B
-* inherting more than one class class A:public B,public C.
-* 
+* inherting more than one class class A:public B,public C
+
