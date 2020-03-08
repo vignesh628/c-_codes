@@ -1,0 +1,22 @@
+*Access specifiers in c++:
+1.Public->All class members  declared under public available to everyone . datamemebers and member functions declared can be 
+accessed by other classes to.
+2.Private->Only by the functions inside the class not by any other objects outside the class.But they can be accessed by the friend 
+ functions.
+3.Protected.->similar to private.
+  ->can be only accessed by the derived class of that class.
+#########################################################################################################################################
+* There is a way to access the even private members of class is to declare them in public members of same class since the public is 
+available with in the class that can be accessed from the anywhere.
+########################################################################################################################################
+ Types of inheritance:
+1.single inheritance
+2.multiple inheritance
+3.multilevel inheritance.
+4.hierarchial inheritance.
+5.hybrid inheritnace.
+#############################################################################################################################################
+* combination of the hierarchial inheritance and multiple inheritance is the hybrid inheritnace.
+* hierarchial inheritnace is the inverse of the multiple inheritance.
+* classes syntax is same as the structure syntax. And we end the class declaration with the semicolon.
+ ########################################################################################################################################
