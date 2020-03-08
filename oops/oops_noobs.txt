@@ -20,3 +20,16 @@ available with in the class that can be accessed from the anywhere.
 * hierarchial inheritnace is the inverse of the multiple inheritance.
 * classes syntax is same as the structure syntax. And we end the class declaration with the semicolon.
  ########################################################################################################################################
+* IF we donot specify the access modifiers for the members in the class then by default they will be considerd as private.
+* These access modifiers are useful when we use the important feature of data hiding.
+* syntax to call the object ion the c++.
+class obj;
+obj.method
+python
+object=class()
+object.method() -> to access the method in the class.
+#######################################################################################################################################
+* Symbol to inherit the class in c++ is ':'.
+* inherting the siongle class class A: public B
+* inherting more than one class class A:public B,public C.
+* 
