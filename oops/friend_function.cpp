@@ -9,26 +9,4 @@ If a is friend of b.
 it is not like of b is friend of a.
 3.frienship cannot be inherited -> This  friend concept is not there in java.
 ################################################################################################################################
-Using the constructor in  the class:
-class A
-{
-private:
-int x;
-public:
-A()
-{
-x=12;
-}}
-The above is the example of non parametric constructor.
-################################################################################################################################
-class A
-{
-private:
-int a;
-public:
-A()
-{
-a=12;
-}
-friend int add(A,B);
-};
+Example:
