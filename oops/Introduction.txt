@@ -1,3 +1,14 @@
+creating the class constructor:
+class a
+{
+int x;
+public:
+a(int y)
+{
+x=y;
+}
+};
+##########################################################################################################################
 * encapsulation deals with the information hiding.
 * Polymorphism consists of the two types of polymorphism
 1.Compile time polymorphism. -> deals with the operator overlaoding, Function Overloading.
