@@ -1,3 +1,18 @@
+Graphs:
+* datastructure which is represented by the finite set of the nodes and the edges.
+* edges are coneected by nodes.
+* Applications of graphs:
+1.when you want to figure out the shortest distance between the places we use this datastructure.
+2.can be used in the facebook ,quora ,linkedin where each user is represented by a node.
+3.If the edges of graph are connected by weights then it called the weighted graph.
+4.If the two nodes are connected by the edge without giving any value to the graph then it is called the unweighted graph.
+5.graphs can be also used in the routing algos and networks.
+#######################################################################################################################################
+Terminologies in graphs:
+1.Degree: number of vertices connected to the node.
+2.Path: the set of edges that are used in going from the source node to the destination node.
+3.Connected graph:If you start from the each vertex reach all other vertices.
+####################################################################################################################################
 Adjacency matrix:
 This is the matrix that is used in graphs to know whether the edge is present beween two vertices.
 Incase of the unweighted graph is represented in boolean where 1 if the edge is present and 0 if the edge is not present.
@@ -5,4 +20,4 @@ Incase of the weighted graphs it is represented by the weights where the each we
 ##################################################################################################################################
 adjacency list-> this we can get from the adjacency matrix, used to compute the neighbors of given node.
 This is memory efficeint.
-#######################################################################################################################
+#################################################################################################################################
