@@ -1,0 +1,55 @@
+* We use the dynamic linked list  in the graphs to create the graph and parse the graphs.
+* Dynamically declaring the array.
+* int *arr=new int[5];
+* array is declared dynamically withe size of 5.
+#########################################################################################################################################
+dynamically decalring the list.
+list<int> *a=new list<int>[5];
+here we have given the 5 but generally it is the number of vertices we use in the graph.
+##########################################################################################################################################
+generally for the linked lists and trees we managed using the structures but we have to create the class and with list we will 
+manage the trees.
+Since we will be using the lists we will the fucntions like .push_back()
+we will include the header #include<list>
+#########################################################################################################################################
+#include<queue>
+queue<Node*> q;
+This is how we declare the queue when we use the operations on the tree for traversal like the level order traversal or breadth first 
+traversal
+#########################################################################################################################################
+Incase of linkedlists:
+struct Node
+{
+int value;
+Node* address;
+}
+Incase of trees
+struct Node
+{
+int value;
+Node* left_address;
+Node* right_address;
+}
+#########################################################################################################################################
+creation of new node in case of structures will be like
+Node *me= new Node();
+this is how we create new node.
+############################################################################################################################################
+if we write the ufnction to add the node at the begining of the linked list
+void insert_at_beginning(value)
+{
+Node *me =new Node();
+me->value=value;
+
+if(head==NULL)
+{
+me->address=NULL;
+head=me;
+}
+else
+{
+me->address=head;
+head=me;
+}}
+##########################################################################################################################################
+
