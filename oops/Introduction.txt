@@ -91,4 +91,9 @@ these p1,p2,p3 that we are passing will directly going into the __init__, be car
 classnot in the methods within the class)
 @staticmethod is used in python which are the static methods that can be called directly whithout calling the class name. that's where 
 the static name came in where it has scope allover the code.
-####################################################################################################################################
+############################################################################################################################
+* static member functions can be called without the object or calling the class.
+* initialising the object in the c++ is like class obj;
+* If you are passing the parameters for the constructors of the class which is parameterized contructor
+class obj(parameter1,parameter2);
+############################################################################################################################
