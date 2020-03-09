@@ -1,0 +1,11 @@
+* decalring the array dynamically.
+v is the number of vertices.
+int v;
+int *a=new int[v]; //iani ->Node *head=new Node(); //int a=new int[v];
+this we create the array of size v which means that we created the array that can store the v elements.
+Dynamically allocating the array means decalration of the array at run time.
+#######################################################################################################################################
+* declaring the linkedlists dynamically.
+list<int> *a=new list<int>[v];
+This means that we are making the array of the linked lists.
+#######################################################################################################################################
