@@ -1,5 +1,22 @@
 #calling up by the value need to return and set it but calling by reference the varaibel gets set automatically.
+##########################################################################################################################
+Advantages of using Call by value method
+Pros/benefits of a call by value method:
+
+The method doesn't change the original variable, so it is preserving data.
+Whenever a function is called it, never affect the actual contents of the actual arguments.
+Value of actual arguments passed to the formal arguments, so any changes made in the formal argument
+does not affect the real cases
 ########################################################################################################################
+Advantages of using Call by reference method
+Pros of using call by reference method:
+
+The function can change the value of the argument, which is quite useful.
+It does not create duplicate data for holding only one value which helps you to save memory space.
+In this method, there is no copy of the argument made. Therefore it is processed very fast.
+Helps you to avoid changes done by mistake
+A person reading the code never knows that the value can be modified in the function.
+#########################################################################################################################
 call by value:
 #include<iostream>
 using namespace std;
