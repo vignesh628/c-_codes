@@ -32,4 +32,27 @@ object.method() -> to access the method in the class.
 * Symbol to inherit the class in c++ is ':'.
 * inherting the siongle class class A: public B
 * inherting more than one class class A:public B,public C
+######################################################################################################################################
+* We have the important concepts like the
+1. data encapuslation
+2. data abstraction 
+3.polymorphism
+######################################################################################################################################
+polymorphism can be achieved by the 
+* operator overloading-> for this we choose the operator we use the operator keyword in this
+for example :
+void operator +(argx, argy)
+{
+}
++obj(par1,par2)
+#this is the syntax that we use for the operator overloading.
+we use the operator keyword in case of the operator overlaoding.
 
+* method overloading-> for this we will overload the functions of the same class.
+
+* method overrding -> for this two classe have to be present.
+
+*Run time polymorphism can be achieved using the virtual keyword.
+- during the run time polymoprhism we will allocate the address to the object of the derived class.
+- using the virtual keyword infront of the base class function we will be able to access the functions of the deroved class.
+#####################################################################################################################################
