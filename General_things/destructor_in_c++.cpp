@@ -4,6 +4,11 @@
 1.It never takes the argument as the input.
 2.only one destructor is needed to destroy the objects of the constructor.
 3.compiler automatically makes the destructor.
+##########################################################################################################################
+*If destructor is done automatically why do we use it again ??
+    Normally Destructor Know how to destroy anything created by Constructors.
+But sometime when we use Dynamic Memory Allocation ( means new and delete Operator)
+Then we need to use delete operator in Destructor.
 ##################################################################################################################################
 #include<iostream>
 using namespace std;
