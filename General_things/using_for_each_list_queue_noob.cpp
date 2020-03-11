@@ -52,3 +52,36 @@ int main()
 ##################################################################################################################################
 https://ide.geeksforgeeks.org/AaEJMv4UkJ
 ###################################################################################################################################
+using the queue:
+#include<queue>
+queue<int> q;
+Why we declare the queue to be like this not like the pointer sice we wnat the only one queue to manipulate the data we use like this.
+####################################################################################################################################
+@ There are 3 ways we can use new keyword and initialise dynamically.
+ int *q=new int;
+int *q=new int(5.5); initialse with the value 5.5
+ int *q=new int[5]; initilaise with memory usage.
+######################################################################################################################################
+@writing using the queue.
+ #include<iostream>
+using namespace std;
+#include<queue>
+int main()
+{
+    // # we can initialize the pointer variables only with the new keyword
+    queue<int>q;
+    for(int i=0;i<10;i++)
+    {
+        q.push(i);
+    }
+    while(!q.empty())
+    {
+        cout<<q.front();
+        q.pop();
+    }
+} 
+#####################################################################################################################################
+output:
+0123456789
+ ####################################################################################################################################
+ https://ide.geeksforgeeks.org/2T7zlFfZbm
