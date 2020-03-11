@@ -111,6 +111,7 @@ int main()
     }
 }
 #***If you see here single value assignment will be like *ptr=9 where we have the list or array ptr[i]=9 like this***#
+It will be like the value at that address is 
 in case of list int *adjlist;
 adjlist[u].push_back(v);
 ###################################################################################################################################
