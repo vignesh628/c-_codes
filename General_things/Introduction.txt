@@ -61,4 +61,16 @@ u32 b=64;
 *There is bigger advantage of this when we are writing larger codes to store all this in single file how they do in continental.
 #######################################################################################################################################
 * using keyword in c++.
-* 
+#######################################################################################################################################
+* decalring the array be like
+int arr[5]; declaring the integer array of the size 5.
+char c[5]; declaring the character array of the size 5.
+bool b[5]; declaring the boolean array of the size 5.
+but what if we know the size at the run time only ??
+That we can do by initializing at the run time like
+int *arr=new int[v];
+where we get the v as the input during the run time
+creating the boolean array during the run time
+bool* visited=new bool[v]{0}; what is the speciality of using the{0} is we can initialise the array witht the value as 0.
+#####################################################################################################################################
+
