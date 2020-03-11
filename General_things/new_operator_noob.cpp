@@ -90,3 +90,50 @@ the value of thepointer variable ptr1 is  2
 ######################################################################################################################################
 https://ide.geeksforgeeks.org/urzFMKQYrz
 #####################################################################################################################################
+// program with the new operator c++
+#include<iostream>
+using namespace std;
+int main()
+{
+    int *ptr1=NULL;
+    ptr1=new int;
+    *ptr1=5;
+    float *ptr2=new float(2.22);
+    int *ptr3=new int[20];
+    for (int i=0;i<20;i++)
+    {
+        // *ptr3[i]=i; this will give the error
+        ptr3[i]=i;// this will be value at the address
+    }
+    for(int i=0;i<20;i++)
+    {
+        cout<<ptr3[i]<<endl;
+    }
+}
+#***If you see here single value assignment will be like *ptr=9 where we have the list or array ptr[i]=9 like this***#
+in case of list int *adjlist;
+adjlist[u].push_back(v);
+###################################################################################################################################
+output:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+#####################################################################################################################################
+  https://ide.geeksforgeeks.org/vWg3xWiUe2
