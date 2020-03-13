@@ -72,5 +72,37 @@ int *arr=new int[v];
 where we get the v as the input during the run time
 creating the boolean array during the run time
 bool* visited=new bool[v]{0}; what is the speciality of using the{0} is we can initialise the array witht the value as 0.
-#####################################################################################################################################
-
+#############################################################################################################################
+.  is the operator ,used to normally access members of a structure or union.
+->  to access the members of the structure or the unions using pointers.
+###################################################################################################################
+unary operators are like +,++,-,--
+we can copy the values of one object to the other object using the copy constructor like classname obj2(obj1)
+Now the object 2 will take all the values of the object1.
+###################################################################################################################
+this is used onluy for the non static members.
+For example if we initialized the variable in class. the name of the variable is same as the argument name to the method inside the class.
+Then we say it as 
+class my_class
+{
+int a;
+public:
+my_function(int a)
+{
+this->a=a;
+}
+like this we can use the this pointer.
+####################################################################################################################
+Once we declare the variable as the static then where ever we change the value of the static variable the original variable gets changed
+########################################################################################################################
+* THis pointer is passed as the hidden argument which holds the address of the current object.
+Why this operator is not there for the non static methods ??
+because the non static methods can be acccessed directly.
+#######################################################################################################################
+There are 3 types of methods:
+1.class methods -> they can take the class objects we will pass the argument as self instead of class.
+2.static methods -> this methods can be called directly without using the object.
+3. methods that take input as the self parameter. we can rewrite the value present in the self.
+########################################################################################################################
+*  unlike arrays, vectors size can change dynamically, with their storage being handled automatically by the container.
+* vectors also the memory is allcoated sequentially.'
