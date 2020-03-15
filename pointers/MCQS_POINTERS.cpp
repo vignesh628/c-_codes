@@ -81,6 +81,41 @@ cout << *ptr << “ “ << f << “ “ << p;
 output:
 2.5 2.5 2.5
 ######################################################################################################################################
+Pointers Output
+Send Feedback
+What will be the output ?
+float f = 10.5;
+float p = 2.5;
+float* ptr = &f;
+(*ptr)++;
+*ptr = p;
+cout << *ptr << “ “ << f << “ “ << p;
+#########################################
+output:
+7 Garbage_value
+#####################################################################################################################################
+Fill the output
+Send Feedback
+Assume memory address of variable ‘a’ is : 400 (and an integer takes 4 bytes), what will be the output -
+int a = 7;
+int *c = &a;
+c = c + 3;
+cout  << c << endl;
+############################################
+output:
+412
+ #################################################################################################################################
+ Fill the output
+Send Feedback
+Assume memory address of variable ‘a’ is : 200 and a double variable is of size 8 bytes, what will be the output -
+double a = 10.54;
+double *d = &a;
+d = d + 1;
+cout  << d << endl;
+###############################################
+output
+408
+####################################################################################################################################
 
 
 
