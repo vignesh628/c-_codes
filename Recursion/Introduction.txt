@@ -1,0 +1,3 @@
+* Recursion is basically calling itself.
+* If a problem we are doing is able to break it into small problems as the function of itself is done using the recrusion.
+* 
