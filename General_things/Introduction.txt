@@ -106,3 +106,51 @@ There are 3 types of methods:
 ########################################################################################################################
 *  unlike arrays, vectors size can change dynamically, with their storage being handled automatically by the container.
 * vectors also the memory is allcoated sequentially.'
+########################################################################################################################
+* Ways of initialising the variable be like
+int result=10;
+int result(10); // the second way is the way of defining the constructor.
+#######################################################################################################################
+defining  the macro inside locally will give error:
+#include<iostream>
+using namespace std;
+#define PI 3.14
+int main()
+{
+    cout<<" the value of pi is "<<PI<<endl;
+    PI=5;
+    cout<<"the value of pi is "<<PI<<endl;
+    
+}
+#######################################################################################################################
+output:
+prog.cpp: In function ‘int main()’:
+prog.cpp:7:7: error: lvalue required as left operand of assignment
+     PI=5;
+       ^
+#######################################################################################################################
+****Once it is defined as the macro it cannot be defined any where even inside the function ***
+#include<iostream>
+using namespace std;
+#define PI 3.14
+void display()
+{
+    cout<<" the value of PI is"<<PI<<endl;
+    
+    PI=5;
+    cout<<" the value of PI is"<<PI<<endl;
+    
+}
+int main()
+{
+    cout<<" the value of pi is "<<PI<<endl;
+    display();
+    
+}
+######################################################################################################################
+output:
+prog.cpp: In function ‘void display()’:
+prog.cpp:8:7: error: lvalue required as left operand of assignment
+     PI=5;
+#########################################################################################################################
+
