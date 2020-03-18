@@ -9,3 +9,19 @@ Dynamically allocating the array means decalration of the array at run time.
 list<int> *a=new list<int>[v];
 This means that we are making the array of the linked lists.
 #######################################################################################################################################
+* The differnt ways of declaring the arrays :
+@ If you already have the input.
+ char name[]='vignesh';
+ int value[]={0,1,2,3,4};
+@ IF you know the size of the array:
+ char name[10];
+ int value[10];
+@ Creating the array dynamically:
+ int *arr=new int[10];
+ char *name=new char[10];
+######################################################################################################################################
+3 ways of decalring dynamically  using new:
+int *value;
+int *value=new int(); @ this will be used if you have the multiple members inside that.
+int *value=new int[n];@ this will be used when you are allocating the memory.
+####################################################################################################################################
