@@ -8,6 +8,7 @@ Dynamically allocating the array means decalration of the array at run time.
 * declaring the linkedlists dynamically.
 list<int> *a=new list<int>[v];
 This means that we are making the array of the linked lists.
+This will be used generally when we are using the graphs creating with the v vertices. 
 #######################################################################################################################################
 * The differnt ways of declaring the arrays :
 @ If you already have the input.
