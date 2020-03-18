@@ -6,3 +6,5 @@
 
 * we cannot find the size of the numerical array like this.
 
+* We can get the size of the numerical array like sizeof(arr)/sizeof(arr[0])
+
